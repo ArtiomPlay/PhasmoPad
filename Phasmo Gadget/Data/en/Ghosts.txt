@@ -1,5 +1,26 @@
 [
 	{
+		"Ghostname":"Aswang",
+		"Evidence1":"Dots",
+		"Evidence2":"Temp",
+		"Evidence3":"Book",
+		"Evidence4":"",
+		"Evidence_Guaranteed":"",
+		"Type_Title":"Type",
+		"Type":"The Hunter",
+		"Hunt_Title":"Hunt",
+		"Hunt":"50%",
+		"Hunt_Abilities_Title":"Hunt Specific",
+		"Hunt_Abilities":"Fast acceleration",
+		"Smudging_Title":"Smudging",
+		"Smudging":"90 seconds",
+		"Hints":[
+			"●The Aswang has a base speed of 1.53 m/s",
+			"●Its line-of-sight acceleration increases its speed at a rate of 0.0375 times its base speed per second instead of 0.025, meaning it reaches its maximum speed of 2.53 m/s after 17.33 seconds instead of 26 seconds for most other ghosts",
+			"●The hunt will instantly end if the Aswang detects and reaches a player inside an available official hiding spot (such as a closet or a locker) used correctly, meaning it is impossible for players to be killed while hiding. However, if the Aswang were to end a hunt this way, then the ghost will place a waypoint directly at the player's location at the start of the next hunt and move to it, even during the grace period"
+		]
+	},
+	{
 		"Ghostname":"Banshee",
 		"Evidence1":"Finger",
 		"Evidence2":"Orb",
@@ -31,7 +52,31 @@
         	"●When a Parabolic Microphone is used, the Banshee has a 33% chance of making a unique shriek-like paranormal sound instead of a regular whisper",
         	"●At the start of the game a player is randomly selected as the hunt target. If the hunt target leaves the game or dies, a new hunt target will be selected",
         	"●When a Banshee hunts, it will mostly follow standard hunt rules, but it will ignore all players other than its hunt target. It will not attempt to chase other players nor will it kill them, even if it comes into direct contact with a non-target player, instead passing through them. The Banshee will react to Incense lit by other players within range, but this will not allow for completion of the \"Repel a ghost while it is chasing someone\" optional objective unless the Banshee is also chasing its target when this occurs",
-        	"●If the hunt target is outside the building, the Banshee will still use its target's sanity to decide whether to hunt. However, if it does hunt, it will hunt like any other ghost, chasing any opportune player"
+        	"●If the hunt target is outside the building, the Banshee will still use its target's sanity to decide whether to hunt. However, if it does hunt, it will hunt like any other ghost, chasing any opportune player",
+			"●The Banshee can only be a female ghost and will use a female name and ghost model"
+		]
+	},
+	{
+		"Ghostname":"Dayan",
+		"Evidence1":"EMF",
+		"Evidence2":"Orb",
+		"Evidence3":"Box",
+		"Evidence4":"",
+		"Evidence_Guaranteed":"",
+		"Type_Title":"Type",
+		"Type":"Hyper-vigilant",
+		"Hunt_Title":"Hunt",
+		"Hunt":"45%/50%/65%",
+		"Hunt_Abilities_Title":"Hunt Specific",
+		"Hunt_Abilities":"Standing near / Too far / Walking near",
+		"Smudging_Title":"Smudging",
+		"Smudging":"90 seconds",
+		"Hints":[
+			"●When a player is within 10 metres of the Dayan, whether on the same floor or not, the ghost will have a modified hunt sanity threshold and hunt speed depending on further factors:",
+			"  ●If the closest player is still, the threshold is decreased to 45% and the ghost will have a fixed speed of 1.2 m/s",
+			"  ●If the closest player is walking, the threshold is increased to 65% and the ghost will have a fixed speed of 2.25 m/s",
+			"●If there is no player within 10 metres of the Dayan, it will have the standard threshold of 50% and follow standard ghost speeds with one particularity: if the Dayan has line-of-sight with a player within 10 metres, the speed increase from continuous line-of-sight adds in the background, and will only be applied once it is no longer near any player",
+			"●The Dayan can only be a female ghost and will use a female name and ghost model"
 		]
 	},
 	{
@@ -83,6 +128,43 @@
         	"  ●< 2.5m: 0.4 m/s",
         	"●If the Deogen is smudged or is otherwise not chasing any player, its speed will remain at its current speed, or 1.6 m/s if its current speed is greater than 3 m/s. Otherwise, the Deogen does not alter its speed based on line-of-sight while chasing a player",
         	"●During a hunt, the Deogen flickers and is on average invisible for shorter and visible for longer compared to most other ghosts"
+		]
+	},
+	{
+		"Ghostname":"Gallu",
+		"Evidence1":"EMF",
+		"Evidence2":"Box",
+		"Evidence3":"Finger",
+		"Evidence4":"",
+		"Evidence_Guaranteed":"",
+		"Type_Title":"Type",
+		"Type":"Defiance Demon",
+		"Hunt_Title":"Hunt",
+		"Hunt":"40%/50%/60%",
+		"Hunt_Abilities_Title":"Hunt Specific",
+		"Hunt_Abilities":"Weakened / Normal / Enraged",
+		"Smudging_Title":"Smudging",
+		"Smudging":"90 seconds",
+		"Hints":[
+			"●The Gallu cannot disturb salt piles while in its enraged state",
+			"●The Gallu has three states it can switch to: \"normal\", \"enraged\", and \"weakened\". By default, it starts in the normal state, where it behaves like a standard ghost. It will change from the normal state to the enraged state or from the weakened state to the normal state:",
+			"  ●instantly after burning a crucifix",
+			"  ●instantly after the end of the incense's blinding effect during a hunt",
+			"  ●after a duration equal to the last blinding effect from an incense after being affected by incense outside of a hunt",
+			"    ●instantly if no incense were used during any previous hunts",
+			"    ●4 seconds if the Gallu was last blinded while in an enraged state",
+			"    ●5 seconds if the Gallu was last blinded while in a normal state",
+			"    ●6 seconds if the Gallu was last blinded while in a weakened state",
+			"  ●2 seconds after stepping in salt if its current state is \"normal\"",
+			"  ●3 seconds after stepping in salt if its current state is \"weakened\"",
+			"●The state changes cannot be queued. For example, a weakened Gallu stepping in a second salt pile 1 second after stepping into the first one will not make it change into the enraged state 1 second after changing into the normal state",
+			"●If a hunt ends while the Gallu is in its enraged state, it will instantly switch to the weakened state",
+			"●The following table lists the Gallu's behavior depending on its current state:",
+			"  Behaviour: Normal State, Enraged State, Weakened State",
+			"  Hunt sanity threshold: 50%, 60%, 40%",
+			"  Crucifix range: Standard, -2 meters, +1 meter",
+			"  Hunt base speed: 1.7 m/s, 1.955 m/s, 1.36 m/s",
+			"  Incense's blinding effect: 5 seconds, 4 seconds, 6 seconds"
 		]
 	},
 	{
@@ -161,6 +243,36 @@
         	"  ●The Jinn is further than 3 metres from that player",
         	"●Then its speed will be fixed at 2.5 m/s while the criteria are met. Otherwise, it will obey standard ghost speeds with one particularity: while it is travelling at the fixed 2.5 m/s speed, the speed increase from continuous line-of-sight adds in the background, and will be applied once one criteria is no longer satisfied",
         	"●Whether there are lights turned on or not does not affect the Jinn's abilities"
+		]
+	},
+	{
+		"Ghostname":"Kormos",
+		"Evidence1":"Orb",
+		"Evidence2":"Box",
+		"Evidence3":"Finger",
+		"Evidence4":"",
+		"Evidence_Guaranteed":"",
+		"Type_Title":"Type",
+		"Type":"Blind tracker",
+		"Hunt_Title":"Hunt",
+		"Hunt":"50%/70%",
+		"Hunt_Abilities_Title":"Hunt Specific",
+		"Hunt_Abilities":"Normal / Sprint near",
+		"Smudging_Title":"Smudging",
+		"Smudging":"90 seconds",
+		"Hints":[
+			"●The Kormos cannot perform mist form and chasing ghost events",
+			"●The Kormos has a hunt sanity threshold of 50% by default. It is increased to 70% if a player sprints in the same room as it",
+			"●During a hunt, the Kormos does not have visual line-of-sight and will therefore only detect players through voice chat and active electronic equipment. Due to having no line-of-sight, it cannot remember player locations between hunts and it will kill players by simply getting within 1.5 metres of them, ignoring obstacles such as furniture or walls",
+			"●The heightened hearing of the Kormos additionally allows it to sense players who are moving on the same floor. Every second, it checks if players have emitted a footstep sound (the game only stores one sound per player) in specific ranges (that cannot be changed by the Monkey Paw), and places a \"detection waypoint\" at the location of the sound with the highest priority, or the nearest if there are multiple of the same priority",
+			"  Priority, Player movement, Detection range",
+			"  Highest, Sprinting, 30 meters",
+			"  Medium, Walking while standing, 15 meters",
+			"  Lowest, Walking while crouched, 10 meters",
+			"●If the pathing distance between the ghost and the footstep sound's location is strictly greater than 1.5 times the aforementioned ranges, the ghost ignores that sound",
+			"●While moving to a detection waypoint (including voice and electronics), the Kormos cannot detect footstep sounds, voices, or electronics until it reaches its current waypoint or after a delay of 5-10 seconds. Contrary to other ghosts, the Kormos can update its detection waypoint before reaching the previous one",
+			"●When the Kormos detects a player through movement within 5 metres, it will enter a \"pseudo-line-of-sight\" phase and focus that player (overriding priority rules) by continuously updating its detection waypoint while also increasing its speed up to 1.65 times the base speed over 26 seconds",
+			"●The Kormos has a base speed of 1.7 m/s. Its current speed is multiplied by 1.3 if it travels to a detection waypoint that has been placed at more than 5 metres away"
 		]
 	},
 	{
@@ -272,6 +384,29 @@
         	"  ●This also means that the Obake will not shapeshift at all if the hunt ends prematurely (after the ghost kills a player or when all players leave the investigation area), as it will not have the time to reach the 12th flicker",
         	"●When shapeshifting, the Obake has an order of models it will use. The first shapeshift of the contract will always be using the first ghost model. The second shapeshift will then use the second model, the third one the third model, and so on with the list looping on itself. When the Obake reaches its own model in the list, it will shapeshift into itself with a more or less visible posture reset",
         	"●Both the shapeshifting and the fingerprint duration's reduction will count as an ability in the post-game statistics"
+		]
+	},
+	{
+		"Ghostname":"Obambo",
+		"Evidence1":"Dots",
+		"Evidence2":"Book",
+		"Evidence3":"Finger",
+		"Evidence4":"",
+		"Evidence_Guaranteed":"",
+		"Type_Title":"Type",
+		"Type":"Mood shifter",
+		"Hunt_Title":"Hunt",
+		"Hunt":"10%/65%",
+		"Hunt_Abilities_Title":"Hunt Specific",
+		"Hunt_Abilities":"Calm / Aggressive",
+		"Smudging_Title":"Smudging",
+		"Smudging":"90 seconds",
+		"Hints":[
+			"●The Obambo has two states: \"calm\" and \"aggressive\". It always starts in the calm state at the beginning of a contract before switching to the other state 1 minute after an exit door is opened for the first time, then every 2 minutes. The state switch can happen during a hunt",
+			"●Depending on its state, the Obambo will have a fixed activity level of 90 or of 25, respectively when calm and aggressive",
+			"●The Obambo has a hunt sanity threshold of 10% while in its calm state, and of 65% in its aggressive state",
+			"●The Obambo will travel at a base speed of 1.445 m/s in its calm state and at a base speed of 1.955 m/s in its aggressive state",
+			"●The hunt duration will be 20% shorter if the Obambo starts the hunt in the aggressive state. This will apply even if the ghost switches to the calm state mid-hunt"
 		]
 	},
 	{
