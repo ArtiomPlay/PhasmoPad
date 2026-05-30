@@ -12,8 +12,8 @@
         "Dif_Intermediate":"▼ Средняя",
         "Dif_Nightmare":"▼ Кошмар",
         "Dif_Professional":"▼ Профессионал",
-        "Small":"Bleasdale Farmhouse, Camp Woodwind, Edgefield Road, Grafton Farmhouse, Ridgeview Court, Sunny Meadows Restricted, Tanglewood Drive, Willow Street",
-        "Medium":"Brownstone High School, Maple Lodge Campsite, Prison",
-        "Big":"Sunny Meadows"
+        "Small":"6 Tanglewood Drive, 10 Ridgeview Court, 13 Willow Street, 42 Edgefield Road, Camp Woodwind, Grafton Farmhouse, Nell's Diner",
+        "Medium":"Bleasdale Farmhouse, Maple Lodge Campsite, Point Hope, Prison, Sunny Meadows (Restricted)",
+        "Big":"Brownstone High School, Sunny Meadows"
     }
 ]

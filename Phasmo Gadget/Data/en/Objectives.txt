@@ -1,6 +1,10 @@
 
 EMF Reader
-Photo
+Ghost Photo
+3 Unique Photos
+Ghost Video
+3 Unique Videos
+2 Unique Sounds
 Motion Sensor
 Crucifix
 Event
