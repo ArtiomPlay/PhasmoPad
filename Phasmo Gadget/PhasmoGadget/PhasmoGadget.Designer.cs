@@ -3543,7 +3543,7 @@ namespace PhasmoGadget.PhasmoGadget {
             this.lblVersion.Name="lblVersion";
             this.lblVersion.Size=new Size(60,24);
             this.lblVersion.TabIndex=312;
-            this.lblVersion.Text="Version 2.1.0\nUpdate by Artiom";
+            this.lblVersion.Text="Version 2.1.1\nUpdate by Artiom";
 
             this.lblTextColor.AutoSize=true;
             this.lblTextColor.Font=new Font("Microsoft Sans Serif",10f,FontStyle.Regular,GraphicsUnit.Point,(byte)0);
